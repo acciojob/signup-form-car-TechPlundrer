@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
+	  <meta charset="UTF-8">
+	<title>Signup Form</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	<form method="post">
+		
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" placeholder="Name" required>
+		<br><br>
+
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" placeholder="Email" required>
+		<br><br>
+
+		<span>Gender:</span><br>
+		<input type="radio" id="gender_m" name="gender" value="Male" required>
+		<label for="gender_m">Male</label>
+
+		<input type="radio" id="gender_f" name="gender" value="Female" required>
+		<label for="gender_f">Female</label>
+		
+		<br><br>
+		
+		<label for="cars">Cars Brand</label>
+		<select id="cars" name="cars" required>
+			<option value="">--Please choose an option--</option>
+			<option value="tata">TATA</option>
+			<option value="mahindra">Mahindra</option>
+			<option value="hyundai">Hyundai</option>
+			<option value="kia">Kia</option>
+			<option value="renault">Renault</option>
+		</select>
+		
+		<br><br>
+		
+		<label for="age">Age</label>
+		<input type="number" id="age" name="age" placeholder="Age" required>
+		
+		<br><br>
+
+		<label for="dob">DOB</label>
+		<input type="date" id="dob" name="dob" required>
+
+		<br><br>
+
+		<label for="Phone Number">Phone Number</label>
+		<input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+		
+		<br><br>
+
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" placeholder="Password" required>
+		
+		<br><br>
+
+		<input type="checkbox" id="tos" name="tos" required>
+		<label for="tos">I agree to the TOS</label>
+
+		<br><br>
+
+		<button type="submit">Submit</button>
+	</form>
+		<!-- the entire body must be written by student -->
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
